@@ -36,7 +36,7 @@
                 <ul>
                   <li><a href="Separate_products.html">ขนม</a></li>
                   <li><a href="Separate_products2.html">ของใช้</a></li>
-                  <li><a href="#">สินค้า3</a></li>
+                  <li><a href="index.html">ทั้งหมด</a></li>
                 </ul>
               </li>
               <li>
@@ -109,6 +109,12 @@
               </div>
             </div>
           </div>
+          <!------------รายละเอียดสินค้า------------->
+          <section>
+            <div class="button_all">
+              <button> <a href="prod6.html">รายละเอียด</a></button>
+            </div>
+          </section>
 
           <!------หัวข้อ------->
           <div class="travel-text">
@@ -138,16 +144,7 @@
                 </span>
               </p>
 
-              <p style="margin-bottom:8pt; margin-left:3cm; margin-right:0cm; margin-top:0cm">
-                  <span style="font-size:11pt">
-                  <span style="font-family:Calibri,sans-serif">
-                  <span lang="TH" style="font-size:14.0pt">สถานที่ผลิต 95</span> 
-                  <span lang="TH" style="font-size:14.0pt">หมู่ที่ 10 </span> 
-                  <span lang="TH" style="font-size:14.0pt">ตำบลทัพหลวง อำเภอเมืองนครปฐม</span>&nbsp;
-                  <span lang="TH" style="font-size:14.0pt">จังหวัดนครปฐม</span>&nbsp;
-                  </span>
-                </span>
-              </p>
+              
 </div>
          
     <!----------facebook page----------->
@@ -434,37 +431,37 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
 </body>
 </html>
